@@ -1,0 +1,105 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+
+int main(){
+///	char int cedulas[7]={100,50,20,10,5,2,1};
+	int valor;
+	int valortotal;
+	int c100;
+  
+	printf("Digite o valor\n\n");
+	scanf("%d",&valor);
+	valortotal+=valor;
+//	printf("%d,%d ",valortotal,valor);
+if (valor>=100){
+  c100=(valor/100);
+  valortotal-=(c100*100);
+  printf("sera %d notas de 100 reais ",c100);
+/// printf("%d",valortotal);
+if((valortotal>=50 )and (valortotal<100)){
+  valortotal-=50;
+  printf(" mais 1 nota de 50 reais");
+   }  
+if ((valortotal<50)and(valortotal>=40)){
+  valortotal-=40;
+  printf(" mais 2 notas de 20 reais ");
+	}
+if((valortotal<40)and(valortotal>=20)){
+  valortotal-=20;
+  printf(" mais 1 nota de 20");
+	}
+if ((valortotal<20)and(valortotal>=10)){
+  valortotal-=10;
+  printf(" mais 1 nota de 10 reais");
+    }
+if ((valortotal<10)and(valortotal>=5)){
+  valortotal-=5;
+  printf(" mais 1 nota de 5 reais");
+    }
+if (valortotal==4){
+  valortotal-=4;
+  printf(" mais 2 nota de 2 reais");
+    }
+else if (valortotal==3){
+  valortotal-=3;
+  printf(" mais 1 nota de 2 reais mais uma nota de 1 real");
+    }
+else if(valortotal==2){
+  valortotal-=2;
+  printf(" mais 1 nota de 2 reais"); 	
+	}
+if(valortotal==1){
+  valortotal-=1;
+  printf(" mais uma nota de 1 real");
+	}
+}
+if (valortotal<100){
+if((valortotal>=50 )and (valortotal<100)){
+  valortotal-=50;
+  printf(" mais 1 nota de 50 reais");
+   }  
+if ((valortotal<50)and(valortotal>=40)){
+  valortotal-=40;
+  printf(" mais 2 notas de 20 reais ");
+	}
+if((valortotal<40)and(valortotal>=20)){
+  valortotal-=20;
+  printf(" mais 1 nota de 20");
+	}
+if ((valortotal<20)and(valortotal>=10)){
+  valortotal-=10;
+  printf(" mais 1 nota de 10 reais");
+    }
+if ((valortotal<10)and(valortotal>=5)){
+  valortotal-=5;
+  printf(" mais 1 nota de 5 reais");
+    }
+if (valortotal==4){
+  valortotal-=4;
+  printf(" mais 2 nota de 2 reais");
+    }
+else if (valortotal==3){
+  valortotal-=3;
+  printf(" mais 1 nota de 2 reais mais uma nota de 1 real");
+    }
+else if(valortotal==2){
+  valortotal-=2;
+  printf(" mais 1 nota de 2 reais"); 	
+	}
+if(valortotal==1){
+  valortotal-=1;
+  printf(" mais uma nota de 1 real");
+	}
+}
+
+	
+	
+
+
+
+
+
+printf(" \n");
+system("\n\npause");
+}
